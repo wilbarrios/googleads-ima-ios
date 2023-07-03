@@ -253,7 +253,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BasicExample/Pods-BasicExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AssemblyGoogleIMAAdapter/AssemblyGoogleIMAAdapter.framework",
-				"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework",
+				"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds/GoogleInteractiveMediaAds.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (

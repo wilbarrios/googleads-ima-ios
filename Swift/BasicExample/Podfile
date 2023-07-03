@@ -9,5 +9,5 @@ target "BasicExample" do
 end
 
 target 'AssemblyGoogleIMAAdapter' do
-  pod 'GoogleAds-IMA-iOS-SDK', '3.15.1'
+  pod 'GoogleAds-IMA-iOS-SDK', '3.5.2'
 end

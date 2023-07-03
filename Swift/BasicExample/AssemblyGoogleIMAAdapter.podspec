@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
 
     # s.static_framework = true
 
-    s.dependency 'GoogleAds-IMA-iOS-SDK', '3.15.1'
+    s.dependency 'GoogleAds-IMA-iOS-SDK', '3.5.2'
 end
