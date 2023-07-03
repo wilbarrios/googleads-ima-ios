@@ -19,6 +19,99 @@ public protocol AssemblyVideoAdProvider {
     func requestAds(adTagUrl: String)
 }
 
+enum VideoAdProviderError {
+    case sdkError(error: Error)
+}
+
+enum VideoAdEvent {
+    case AD_BREAK_READY
+    case AD_BREAK_FETCH_ERROR
+    case AD_BREAK_ENDED
+    case AD_BREAK_STARTED
+    case AD_PERIOD_ENDED
+    case AD_PERIOD_STARTED
+    case ALL_ADS_COMPLETED
+    case CLICKED
+    case COMPLETE
+    case CUEPOINTS_CHANGED
+    case ICON_FALLBACK_IMAGE_CLOSED
+    case ICON_TAPPED
+    case FIRST_QUARTILE
+    case LOADED
+    case LOG
+    case MIDPOINT
+    case PAUSE
+    case RESUME
+    case SKIPPED
+    case STARTED
+    case STREAM_LOADED
+    case STREAM_STARTED
+    case TAPPED
+    case THIRD_QUARTILE
+    case unknown(description: String)
+}
+
+extension GoogleInteractiveMediaAds.IMAAdEventType {
+    func mapToLocal() -> VideoAdEvent {
+        switch self {
+        case .AD_BREAK_READY:
+            return .AD_BREAK_READY
+        case .AD_BREAK_FETCH_ERROR:
+            return .AD_BREAK_FETCH_ERROR
+        case .AD_BREAK_ENDED:
+            return .AD_BREAK_ENDED
+        case .AD_BREAK_STARTED:
+            return .AD_BREAK_STARTED
+        case .AD_PERIOD_ENDED:
+            return .AD_PERIOD_ENDED
+        case .AD_PERIOD_STARTED:
+            return .AD_PERIOD_STARTED
+        case .ALL_ADS_COMPLETED:
+            return .ALL_ADS_COMPLETED
+        case .CLICKED:
+            return .CLICKED
+        case .COMPLETE:
+            return .COMPLETE
+        case .CUEPOINTS_CHANGED:
+            return .CUEPOINTS_CHANGED
+        case .ICON_FALLBACK_IMAGE_CLOSED:
+            return .ICON_FALLBACK_IMAGE_CLOSED
+        case .ICON_TAPPED:
+            return .ICON_TAPPED
+        case .FIRST_QUARTILE:
+            return .FIRST_QUARTILE
+        case .LOADED:
+            return .LOADED
+        case .LOG:
+            return .LOG
+        case .MIDPOINT:
+            return .MIDPOINT
+        case .PAUSE:
+            return .PAUSE
+        case .RESUME:
+            return .RESUME
+        case .SKIPPED:
+            return .SKIPPED
+        case .STARTED:
+            return .STARTED
+        case .STREAM_LOADED:
+            return .STREAM_LOADED
+        case .STREAM_STARTED:
+            return .STREAM_STARTED
+        case .TAPPED:
+            return .TAPPED
+        case .THIRD_QUARTILE:
+            return .THIRD_QUARTILE
+        @unknown default:
+            return .unknown(description: "\(self), rawValue: \(self.rawValue)")
+        }
+    }
+}
+
+protocol VideoAdEventDelegate: AnyObject {
+    func didReceived(_ event: VideoAdEvent)
+}
+
 public final class AssemblyGoogleIMAAdapter: NSObject, AssemblyVideoAdProvider { // Required for Google IMA Delegates
     private let contentPlayhead: IMAAVPlayerContentPlayhead
     private let adsLoader: IMAAdsLoader
@@ -26,6 +119,7 @@ public final class AssemblyGoogleIMAAdapter: NSObject, AssemblyVideoAdProvider {
     private var adsManager: IMAAdsManager? // This is fetched throug loader delegate
     private let viewController: UIViewController
     private let contentPlayer: AVPlayer
+    private weak var videoAdEventDelegate: VideoAdEventDelegate?
     
     public init(
         avPlayer: AVPlayer,
@@ -99,6 +193,7 @@ extension AssemblyGoogleIMAAdapter: IMAAdsManagerDelegate {
             // When the SDK notifies us that ads have been loaded, play them.
             adsManager.start()
         }
+        videoAdEventDelegate?.didReceived(event.type.mapToLocal())
     }
     
     public func adsManager(_ adsManager: IMAAdsManager, didReceive error: IMAAdError) {
