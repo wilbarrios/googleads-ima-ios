@@ -1,5 +1,6 @@
 import AVFoundation
 import UIKit
+import AssemblyGoogleIMAAdapter
 
 class ViewController: UIViewController {
 
