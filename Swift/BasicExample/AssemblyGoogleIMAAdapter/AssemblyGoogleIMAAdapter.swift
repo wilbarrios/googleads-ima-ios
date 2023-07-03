@@ -25,17 +25,17 @@ enum VideoAdProviderError {
 
 enum VideoAdEvent {
     case AD_BREAK_READY
-    case AD_BREAK_FETCH_ERROR
+    case AD_BREAK_FETCH_ERROR // *
     case AD_BREAK_ENDED
     case AD_BREAK_STARTED
-    case AD_PERIOD_ENDED
-    case AD_PERIOD_STARTED
+    case AD_PERIOD_ENDED // *
+    case AD_PERIOD_STARTED // *
     case ALL_ADS_COMPLETED
     case CLICKED
     case COMPLETE
     case CUEPOINTS_CHANGED
-    case ICON_FALLBACK_IMAGE_CLOSED
-    case ICON_TAPPED
+    case ICON_FALLBACK_IMAGE_CLOSED // *
+    case ICON_TAPPED // *
     case FIRST_QUARTILE
     case LOADED
     case LOG
@@ -49,6 +49,7 @@ enum VideoAdEvent {
     case TAPPED
     case THIRD_QUARTILE
     case unknown(description: String)
+    // * = doesnt exists in 3.5.2
 }
 
 extension GoogleInteractiveMediaAds.IMAAdEventType {
@@ -56,16 +57,10 @@ extension GoogleInteractiveMediaAds.IMAAdEventType {
         switch self {
         case .AD_BREAK_READY:
             return .AD_BREAK_READY
-        case .AD_BREAK_FETCH_ERROR:
-            return .AD_BREAK_FETCH_ERROR
         case .AD_BREAK_ENDED:
             return .AD_BREAK_ENDED
         case .AD_BREAK_STARTED:
             return .AD_BREAK_STARTED
-        case .AD_PERIOD_ENDED:
-            return .AD_PERIOD_ENDED
-        case .AD_PERIOD_STARTED:
-            return .AD_PERIOD_STARTED
         case .ALL_ADS_COMPLETED:
             return .ALL_ADS_COMPLETED
         case .CLICKED:
@@ -74,10 +69,6 @@ extension GoogleInteractiveMediaAds.IMAAdEventType {
             return .COMPLETE
         case .CUEPOINTS_CHANGED:
             return .CUEPOINTS_CHANGED
-        case .ICON_FALLBACK_IMAGE_CLOSED:
-            return .ICON_FALLBACK_IMAGE_CLOSED
-        case .ICON_TAPPED:
-            return .ICON_TAPPED
         case .FIRST_QUARTILE:
             return .FIRST_QUARTILE
         case .LOADED:
@@ -128,8 +119,8 @@ public final class AssemblyGoogleIMAAdapter: NSObject, AssemblyVideoAdProvider {
     ) {
         contentPlayhead = IMAAVPlayerContentPlayhead(avPlayer: avPlayer)
         adsLoader = IMAAdsLoader(settings: nil)
-        adDisplayContainer = { [weak videoView, weak viewController] in
-            IMAAdDisplayContainer(adContainer: videoView!, viewController: viewController)
+        adDisplayContainer = { [weak videoView] in
+            IMAAdDisplayContainer(adContainer: videoView!, companionSlots: [])
         }
         self.viewController = viewController
         self.contentPlayer = avPlayer
@@ -175,7 +166,7 @@ extension AssemblyGoogleIMAAdapter: IMAAdsLoaderDelegate {
         
         // Create ads rendering settings and tell the SDK to use the in-app browser.
         let adsRenderingSettings = IMAAdsRenderingSettings()
-        adsRenderingSettings.linkOpenerPresentingController = viewController
+        adsRenderingSettings.webOpenerPresentingController = viewController
         
         // Initialize the ads manager.
         adsManager?.initialize(with: adsRenderingSettings)
