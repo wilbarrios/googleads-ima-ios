@@ -1,324 +1,593 @@
 // !$*UTF8*$!
 {
-  archiveVersion = 1;
-  classes = {
-  };
-  objectVersion = 46;
-  objects = {
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
 
 /* Begin PBXBuildFile section */
-    158CD8041AF7BDD000EFC0B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158CD8031AF7BDD000EFC0B0 /* AppDelegate.swift */; };
-    158CD8061AF7BDD000EFC0B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158CD8051AF7BDD000EFC0B0 /* ViewController.swift */; };
-    158CD80B1AF7BDD000EFC0B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158CD80A1AF7BDD000EFC0B0 /* Images.xcassets */; };
-    158CD8251AF7BE5200EFC0B0 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158CD8231AF7BE5200EFC0B0 /* iPad.storyboard */; };
-    158CD8261AF7BE5200EFC0B0 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158CD8241AF7BE5200EFC0B0 /* iPhone.storyboard */; };
-    158CD82A1AF936C300EFC0B0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158CD8291AF936C300EFC0B0 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		158CD8041AF7BDD000EFC0B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158CD8031AF7BDD000EFC0B0 /* AppDelegate.swift */; };
+		158CD8061AF7BDD000EFC0B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158CD8051AF7BDD000EFC0B0 /* ViewController.swift */; };
+		158CD80B1AF7BDD000EFC0B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158CD80A1AF7BDD000EFC0B0 /* Images.xcassets */; };
+		158CD8251AF7BE5200EFC0B0 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158CD8231AF7BE5200EFC0B0 /* iPad.storyboard */; };
+		158CD8261AF7BE5200EFC0B0 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158CD8241AF7BE5200EFC0B0 /* iPhone.storyboard */; };
+		158CD82A1AF936C300EFC0B0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158CD8291AF936C300EFC0B0 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4474B0CBAE3439088914E6AF /* Pods_BasicExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A630478ACF6B3CEC824297EE /* Pods_BasicExample.framework */; };
+		ACA6E7E22A534EFB00DAAD05 /* AssemblyGoogleIMAAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = ACA6E7E12A534EFB00DAAD05 /* AssemblyGoogleIMAAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACA6E7E72A534F2800DAAD05 /* AssemblyGoogleIMAAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6E7E62A534F2800DAAD05 /* AssemblyGoogleIMAAdapter.swift */; };
+		E3ED26E619781829D1FE469E /* libPods-AssemblyGoogleIMAAdapter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FE55CAF8F56850F3744825 /* libPods-AssemblyGoogleIMAAdapter.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-    158CD7FE1AF7BDCF00EFC0B0 /* BasicExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-    158CD8021AF7BDD000EFC0B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-    158CD8031AF7BDD000EFC0B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-    158CD8051AF7BDD000EFC0B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-    158CD80A1AF7BDD000EFC0B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-    158CD8231AF7BE5200EFC0B0 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
-    158CD8241AF7BE5200EFC0B0 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
-    158CD8291AF936C300EFC0B0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		158CD7FE1AF7BDCF00EFC0B0 /* BasicExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		158CD8021AF7BDD000EFC0B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		158CD8031AF7BDD000EFC0B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		158CD8051AF7BDD000EFC0B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		158CD80A1AF7BDD000EFC0B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		158CD8231AF7BE5200EFC0B0 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
+		158CD8241AF7BE5200EFC0B0 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
+		158CD8291AF936C300EFC0B0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		27EC72D033A7CB2A94A2491F /* Pods-AssemblyGoogleIMAAdapter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssemblyGoogleIMAAdapter.debug.xcconfig"; path = "Target Support Files/Pods-AssemblyGoogleIMAAdapter/Pods-AssemblyGoogleIMAAdapter.debug.xcconfig"; sourceTree = "<group>"; };
+		A08A84DC82A3D871FDF714E3 /* Pods-BasicExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicExample.debug.xcconfig"; path = "Target Support Files/Pods-BasicExample/Pods-BasicExample.debug.xcconfig"; sourceTree = "<group>"; };
+		A630478ACF6B3CEC824297EE /* Pods_BasicExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA6E7DF2A534EFB00DAAD05 /* AssemblyGoogleIMAAdapter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AssemblyGoogleIMAAdapter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA6E7E12A534EFB00DAAD05 /* AssemblyGoogleIMAAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssemblyGoogleIMAAdapter.h; sourceTree = "<group>"; };
+		ACA6E7E62A534F2800DAAD05 /* AssemblyGoogleIMAAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyGoogleIMAAdapter.swift; sourceTree = "<group>"; };
+		ACFCF1D4BD7EBB785DAA5E25 /* Pods-AssemblyGoogleIMAAdapter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssemblyGoogleIMAAdapter.release.xcconfig"; path = "Target Support Files/Pods-AssemblyGoogleIMAAdapter/Pods-AssemblyGoogleIMAAdapter.release.xcconfig"; sourceTree = "<group>"; };
+		F5FE55CAF8F56850F3744825 /* libPods-AssemblyGoogleIMAAdapter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AssemblyGoogleIMAAdapter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F90CD3E5DC9BDD8C87387D2E /* Pods-BasicExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicExample.release.xcconfig"; path = "Target Support Files/Pods-BasicExample/Pods-BasicExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-    158CD7FB1AF7BDCF00EFC0B0 /* Frameworks */ = {
-      isa = PBXFrameworksBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-        158CD82A1AF936C300EFC0B0 /* WebKit.framework in Frameworks */,
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-    };
+		158CD7FB1AF7BDCF00EFC0B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158CD82A1AF936C300EFC0B0 /* WebKit.framework in Frameworks */,
+				4474B0CBAE3439088914E6AF /* Pods_BasicExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA6E7DC2A534EFB00DAAD05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3ED26E619781829D1FE469E /* libPods-AssemblyGoogleIMAAdapter.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-    150851891DAC0B72002F93AA /* Frameworks */ = {
-      isa = PBXGroup;
-      children = (
-      );
-      name = Frameworks;
-      sourceTree = "<group>";
-    };
-    158CD7F51AF7BDCF00EFC0B0 = {
-      isa = PBXGroup;
-      children = (
-        158CD8291AF936C300EFC0B0 /* WebKit.framework */,
-        158CD8001AF7BDCF00EFC0B0 /* BasicExample */,
-        158CD7FF1AF7BDCF00EFC0B0 /* Products */,
-        150851891DAC0B72002F93AA /* Frameworks */,
-      );
-      sourceTree = "<group>";
-    };
-    158CD7FF1AF7BDCF00EFC0B0 /* Products */ = {
-      isa = PBXGroup;
-      children = (
-        158CD7FE1AF7BDCF00EFC0B0 /* BasicExample.app */,
-      );
-      name = Products;
-      sourceTree = "<group>";
-    };
-    158CD8001AF7BDCF00EFC0B0 /* BasicExample */ = {
-      isa = PBXGroup;
-      children = (
-        158CD8231AF7BE5200EFC0B0 /* iPad.storyboard */,
-        158CD8241AF7BE5200EFC0B0 /* iPhone.storyboard */,
-        158CD8031AF7BDD000EFC0B0 /* AppDelegate.swift */,
-        158CD8051AF7BDD000EFC0B0 /* ViewController.swift */,
-        158CD80A1AF7BDD000EFC0B0 /* Images.xcassets */,
-        158CD8011AF7BDCF00EFC0B0 /* Supporting Files */,
-      );
-      path = BasicExample;
-      sourceTree = "<group>";
-    };
-    158CD8011AF7BDCF00EFC0B0 /* Supporting Files */ = {
-      isa = PBXGroup;
-      children = (
-        158CD8021AF7BDD000EFC0B0 /* Info.plist */,
-      );
-      name = "Supporting Files";
-      sourceTree = "<group>";
-    };
+		150851891DAC0B72002F93AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5FE55CAF8F56850F3744825 /* libPods-AssemblyGoogleIMAAdapter.a */,
+				A630478ACF6B3CEC824297EE /* Pods_BasicExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		158CD7F51AF7BDCF00EFC0B0 = {
+			isa = PBXGroup;
+			children = (
+				158CD8291AF936C300EFC0B0 /* WebKit.framework */,
+				158CD8001AF7BDCF00EFC0B0 /* BasicExample */,
+				ACA6E7E02A534EFB00DAAD05 /* AssemblyGoogleIMAAdapter */,
+				158CD7FF1AF7BDCF00EFC0B0 /* Products */,
+				150851891DAC0B72002F93AA /* Frameworks */,
+				5A8CC5A2669E4D7831B8668E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		158CD7FF1AF7BDCF00EFC0B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				158CD7FE1AF7BDCF00EFC0B0 /* BasicExample.app */,
+				ACA6E7DF2A534EFB00DAAD05 /* AssemblyGoogleIMAAdapter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		158CD8001AF7BDCF00EFC0B0 /* BasicExample */ = {
+			isa = PBXGroup;
+			children = (
+				158CD8231AF7BE5200EFC0B0 /* iPad.storyboard */,
+				158CD8241AF7BE5200EFC0B0 /* iPhone.storyboard */,
+				158CD8031AF7BDD000EFC0B0 /* AppDelegate.swift */,
+				158CD8051AF7BDD000EFC0B0 /* ViewController.swift */,
+				158CD80A1AF7BDD000EFC0B0 /* Images.xcassets */,
+				158CD8011AF7BDCF00EFC0B0 /* Supporting Files */,
+			);
+			path = BasicExample;
+			sourceTree = "<group>";
+		};
+		158CD8011AF7BDCF00EFC0B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				158CD8021AF7BDD000EFC0B0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A8CC5A2669E4D7831B8668E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27EC72D033A7CB2A94A2491F /* Pods-AssemblyGoogleIMAAdapter.debug.xcconfig */,
+				ACFCF1D4BD7EBB785DAA5E25 /* Pods-AssemblyGoogleIMAAdapter.release.xcconfig */,
+				A08A84DC82A3D871FDF714E3 /* Pods-BasicExample.debug.xcconfig */,
+				F90CD3E5DC9BDD8C87387D2E /* Pods-BasicExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ACA6E7E02A534EFB00DAAD05 /* AssemblyGoogleIMAAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				ACA6E7E12A534EFB00DAAD05 /* AssemblyGoogleIMAAdapter.h */,
+				ACA6E7E62A534F2800DAAD05 /* AssemblyGoogleIMAAdapter.swift */,
+			);
+			path = AssemblyGoogleIMAAdapter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		ACA6E7DA2A534EFB00DAAD05 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA6E7E22A534EFB00DAAD05 /* AssemblyGoogleIMAAdapter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-    158CD7FD1AF7BDCF00EFC0B0 /* BasicExample */ = {
-      isa = PBXNativeTarget;
-      buildConfigurationList = 158CD81D1AF7BDD000EFC0B0 /* Build configuration list for PBXNativeTarget "BasicExample" */;
-      buildPhases = (
-        158CD7FA1AF7BDCF00EFC0B0 /* Sources */,
-        158CD7FB1AF7BDCF00EFC0B0 /* Frameworks */,
-        158CD7FC1AF7BDCF00EFC0B0 /* Resources */,
-      );
-      buildRules = (
-      );
-      dependencies = (
-      );
-      name = BasicExample;
-      productName = BasicExample;
-      productReference = 158CD7FE1AF7BDCF00EFC0B0 /* BasicExample.app */;
-      productType = "com.apple.product-type.application";
-    };
+		158CD7FD1AF7BDCF00EFC0B0 /* BasicExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 158CD81D1AF7BDD000EFC0B0 /* Build configuration list for PBXNativeTarget "BasicExample" */;
+			buildPhases = (
+				D8170E359842184C8E968796 /* [CP] Check Pods Manifest.lock */,
+				158CD7FA1AF7BDCF00EFC0B0 /* Sources */,
+				158CD7FB1AF7BDCF00EFC0B0 /* Frameworks */,
+				158CD7FC1AF7BDCF00EFC0B0 /* Resources */,
+				AAEEDFD73A14A76CB5F27A6C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BasicExample;
+			productName = BasicExample;
+			productReference = 158CD7FE1AF7BDCF00EFC0B0 /* BasicExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACA6E7DE2A534EFB00DAAD05 /* AssemblyGoogleIMAAdapter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA6E7E52A534EFB00DAAD05 /* Build configuration list for PBXNativeTarget "AssemblyGoogleIMAAdapter" */;
+			buildPhases = (
+				D420A5A3D0C4741037A122FC /* [CP] Check Pods Manifest.lock */,
+				ACA6E7DA2A534EFB00DAAD05 /* Headers */,
+				ACA6E7DB2A534EFB00DAAD05 /* Sources */,
+				ACA6E7DC2A534EFB00DAAD05 /* Frameworks */,
+				ACA6E7DD2A534EFB00DAAD05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AssemblyGoogleIMAAdapter;
+			productName = AssemblyGoogleIMAAdapter;
+			productReference = ACA6E7DF2A534EFB00DAAD05 /* AssemblyGoogleIMAAdapter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-    158CD7F61AF7BDCF00EFC0B0 /* Project object */ = {
-      isa = PBXProject;
-      attributes = {
-        LastSwiftUpdateCheck = 0700;
-        LastUpgradeCheck = 0900;
-        ORGANIZATIONNAME = "Google, Inc.";
-        TargetAttributes = {
-          158CD7FD1AF7BDCF00EFC0B0 = {
-            CreatedOnToolsVersion = 6.3;
-            LastSwiftMigration = 0900;
-          };
-        };
-      };
-      buildConfigurationList = 158CD7F91AF7BDCF00EFC0B0 /* Build configuration list for PBXProject "BasicExample" */;
-      compatibilityVersion = "Xcode 3.2";
-      developmentRegion = English;
-      hasScannedForEncodings = 0;
-      knownRegions = (
-        en,
-        Base,
-      );
-      mainGroup = 158CD7F51AF7BDCF00EFC0B0;
-      productRefGroup = 158CD7FF1AF7BDCF00EFC0B0 /* Products */;
-      projectDirPath = "";
-      projectRoot = "";
-      targets = (
-        158CD7FD1AF7BDCF00EFC0B0 /* BasicExample */,
-      );
-    };
+		158CD7F61AF7BDCF00EFC0B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Google, Inc.";
+				TargetAttributes = {
+					158CD7FD1AF7BDCF00EFC0B0 = {
+						CreatedOnToolsVersion = 6.3;
+						LastSwiftMigration = 0900;
+					};
+					ACA6E7DE2A534EFB00DAAD05 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 158CD7F91AF7BDCF00EFC0B0 /* Build configuration list for PBXProject "BasicExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 158CD7F51AF7BDCF00EFC0B0;
+			productRefGroup = 158CD7FF1AF7BDCF00EFC0B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				158CD7FD1AF7BDCF00EFC0B0 /* BasicExample */,
+				ACA6E7DE2A534EFB00DAAD05 /* AssemblyGoogleIMAAdapter */,
+			);
+		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-    158CD7FC1AF7BDCF00EFC0B0 /* Resources */ = {
-      isa = PBXResourcesBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-        158CD8251AF7BE5200EFC0B0 /* iPad.storyboard in Resources */,
-        158CD8261AF7BE5200EFC0B0 /* iPhone.storyboard in Resources */,
-        158CD80B1AF7BDD000EFC0B0 /* Images.xcassets in Resources */,
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-    };
+		158CD7FC1AF7BDCF00EFC0B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158CD8251AF7BE5200EFC0B0 /* iPad.storyboard in Resources */,
+				158CD8261AF7BE5200EFC0B0 /* iPhone.storyboard in Resources */,
+				158CD80B1AF7BDD000EFC0B0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA6E7DD2A534EFB00DAAD05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AAEEDFD73A14A76CB5F27A6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicExample/Pods-BasicExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AssemblyGoogleIMAAdapter/AssemblyGoogleIMAAdapter.framework",
+				"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AssemblyGoogleIMAAdapter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicExample/Pods-BasicExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D420A5A3D0C4741037A122FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AssemblyGoogleIMAAdapter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8170E359842184C8E968796 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BasicExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-    158CD7FA1AF7BDCF00EFC0B0 /* Sources */ = {
-      isa = PBXSourcesBuildPhase;
-      buildActionMask = 2147483647;
-      files = (
-        158CD8061AF7BDD000EFC0B0 /* ViewController.swift in Sources */,
-        158CD8041AF7BDD000EFC0B0 /* AppDelegate.swift in Sources */,
-      );
-      runOnlyForDeploymentPostprocessing = 0;
-    };
+		158CD7FA1AF7BDCF00EFC0B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158CD8061AF7BDD000EFC0B0 /* ViewController.swift in Sources */,
+				158CD8041AF7BDD000EFC0B0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA6E7DB2A534EFB00DAAD05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA6E7E72A534F2800DAAD05 /* AssemblyGoogleIMAAdapter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-    158CD81B1AF7BDD000EFC0B0 /* Debug */ = {
-      isa = XCBuildConfiguration;
-      buildSettings = {
-        ALWAYS_SEARCH_USER_PATHS = NO;
-        CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-        CLANG_CXX_LIBRARY = "libc++";
-        CLANG_ENABLE_MODULES = YES;
-        CLANG_ENABLE_OBJC_ARC = YES;
-        CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-        CLANG_WARN_BOOL_CONVERSION = YES;
-        CLANG_WARN_COMMA = YES;
-        CLANG_WARN_CONSTANT_CONVERSION = YES;
-        CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-        CLANG_WARN_EMPTY_BODY = YES;
-        CLANG_WARN_ENUM_CONVERSION = YES;
-        CLANG_WARN_INFINITE_RECURSION = YES;
-        CLANG_WARN_INT_CONVERSION = YES;
-        CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-        CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-        CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-        CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-        CLANG_WARN_STRICT_PROTOTYPES = YES;
-        CLANG_WARN_SUSPICIOUS_MOVE = YES;
-        CLANG_WARN_UNREACHABLE_CODE = YES;
-        CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-        "CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-        COPY_PHASE_STRIP = NO;
-        DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-        ENABLE_STRICT_OBJC_MSGSEND = YES;
-        ENABLE_TESTABILITY = YES;
-        GCC_C_LANGUAGE_STANDARD = gnu99;
-        GCC_DYNAMIC_NO_PIC = NO;
-        GCC_NO_COMMON_BLOCKS = YES;
-        GCC_OPTIMIZATION_LEVEL = 0;
-        GCC_PREPROCESSOR_DEFINITIONS = (
-          "DEBUG=1",
-          "$(inherited)",
-        );
-        GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-        GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-        GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-        GCC_WARN_UNDECLARED_SELECTOR = YES;
-        GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-        GCC_WARN_UNUSED_FUNCTION = YES;
-        GCC_WARN_UNUSED_VARIABLE = YES;
-        IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-        MTL_ENABLE_DEBUG_INFO = YES;
-        ONLY_ACTIVE_ARCH = YES;
-        SDKROOT = iphoneos;
-        SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-        TARGETED_DEVICE_FAMILY = "1,2";
-      };
-      name = Debug;
-    };
-    158CD81C1AF7BDD000EFC0B0 /* Release */ = {
-      isa = XCBuildConfiguration;
-      buildSettings = {
-        ALWAYS_SEARCH_USER_PATHS = NO;
-        CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-        CLANG_CXX_LIBRARY = "libc++";
-        CLANG_ENABLE_MODULES = YES;
-        CLANG_ENABLE_OBJC_ARC = YES;
-        CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-        CLANG_WARN_BOOL_CONVERSION = YES;
-        CLANG_WARN_COMMA = YES;
-        CLANG_WARN_CONSTANT_CONVERSION = YES;
-        CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-        CLANG_WARN_EMPTY_BODY = YES;
-        CLANG_WARN_ENUM_CONVERSION = YES;
-        CLANG_WARN_INFINITE_RECURSION = YES;
-        CLANG_WARN_INT_CONVERSION = YES;
-        CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-        CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-        CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-        CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-        CLANG_WARN_STRICT_PROTOTYPES = YES;
-        CLANG_WARN_SUSPICIOUS_MOVE = YES;
-        CLANG_WARN_UNREACHABLE_CODE = YES;
-        CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-        "CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-        COPY_PHASE_STRIP = NO;
-        DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-        ENABLE_NS_ASSERTIONS = NO;
-        ENABLE_STRICT_OBJC_MSGSEND = YES;
-        GCC_C_LANGUAGE_STANDARD = gnu99;
-        GCC_NO_COMMON_BLOCKS = YES;
-        GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-        GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-        GCC_WARN_UNDECLARED_SELECTOR = YES;
-        GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-        GCC_WARN_UNUSED_FUNCTION = YES;
-        GCC_WARN_UNUSED_VARIABLE = YES;
-        IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-        MTL_ENABLE_DEBUG_INFO = NO;
-        SDKROOT = iphoneos;
-        SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-        TARGETED_DEVICE_FAMILY = "1,2";
-        VALIDATE_PRODUCT = YES;
-      };
-      name = Release;
-    };
-    158CD81E1AF7BDD000EFC0B0 /* Debug */ = {
-      isa = XCBuildConfiguration;
-      buildSettings = {
-        ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-        ENABLE_BITCODE = YES;
-        FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-        INFOPLIST_FILE = BasicExample/Info.plist;
-        LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-        OTHER_LDFLAGS = "$(inherited)";
-        PRODUCT_BUNDLE_IDENTIFIER = "com.google.ima.$(PRODUCT_NAME:rfc1034identifier)";
-        PRODUCT_NAME = "$(TARGET_NAME)";
-        SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-        SWIFT_VERSION = 5.0;
-      };
-      name = Debug;
-    };
-    158CD81F1AF7BDD000EFC0B0 /* Release */ = {
-      isa = XCBuildConfiguration;
-      buildSettings = {
-        ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-        ENABLE_BITCODE = YES;
-        FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-        INFOPLIST_FILE = BasicExample/Info.plist;
-        LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-        OTHER_LDFLAGS = "$(inherited)";
-        PRODUCT_BUNDLE_IDENTIFIER = "com.google.ima.$(PRODUCT_NAME:rfc1034identifier)";
-        PRODUCT_NAME = "$(TARGET_NAME)";
-        SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-        SWIFT_VERSION = 5.0;
-      };
-      name = Release;
-    };
+		158CD81B1AF7BDD000EFC0B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		158CD81C1AF7BDD000EFC0B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		158CD81E1AF7BDD000EFC0B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A08A84DC82A3D871FDF714E3 /* Pods-BasicExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = BasicExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.ima.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		158CD81F1AF7BDD000EFC0B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F90CD3E5DC9BDD8C87387D2E /* Pods-BasicExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = BasicExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.ima.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		ACA6E7E32A534EFB00DAAD05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27EC72D033A7CB2A94A2491F /* Pods-AssemblyGoogleIMAAdapter.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = "$(inherited)";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_ARCHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Google, Inc. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = wb.devs.AssemblyGoogleIMAAdapter;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ACA6E7E42A534EFB00DAAD05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACFCF1D4BD7EBB785DAA5E25 /* Pods-AssemblyGoogleIMAAdapter.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = "$(inherited)";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_ARCHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Google, Inc. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = wb.devs.AssemblyGoogleIMAAdapter;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-    158CD7F91AF7BDCF00EFC0B0 /* Build configuration list for PBXProject "BasicExample" */ = {
-      isa = XCConfigurationList;
-      buildConfigurations = (
-        158CD81B1AF7BDD000EFC0B0 /* Debug */,
-        158CD81C1AF7BDD000EFC0B0 /* Release */,
-      );
-      defaultConfigurationIsVisible = 0;
-      defaultConfigurationName = Release;
-    };
-    158CD81D1AF7BDD000EFC0B0 /* Build configuration list for PBXNativeTarget "BasicExample" */ = {
-      isa = XCConfigurationList;
-      buildConfigurations = (
-        158CD81E1AF7BDD000EFC0B0 /* Debug */,
-        158CD81F1AF7BDD000EFC0B0 /* Release */,
-      );
-      defaultConfigurationIsVisible = 0;
-      defaultConfigurationName = Release;
-    };
+		158CD7F91AF7BDCF00EFC0B0 /* Build configuration list for PBXProject "BasicExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158CD81B1AF7BDD000EFC0B0 /* Debug */,
+				158CD81C1AF7BDD000EFC0B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		158CD81D1AF7BDD000EFC0B0 /* Build configuration list for PBXNativeTarget "BasicExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158CD81E1AF7BDD000EFC0B0 /* Debug */,
+				158CD81F1AF7BDD000EFC0B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA6E7E52A534EFB00DAAD05 /* Build configuration list for PBXNativeTarget "AssemblyGoogleIMAAdapter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA6E7E32A534EFB00DAAD05 /* Debug */,
+				ACA6E7E42A534EFB00DAAD05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
-  };
-  rootObject = 158CD7F61AF7BDCF00EFC0B0 /* Project object */;
+	};
+	rootObject = 158CD7F61AF7BDCF00EFC0B0 /* Project object */;
 }
